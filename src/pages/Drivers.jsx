@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Contact = () => {
+const Drivers = () => {
     return (
 
         <>
-        {/* Preloader Start*/ }
-        <div className="preloader">
+         {/* Preloader Start*/ }
+         <div className="preloader">
             <div className="loading-container">
                 <div className="loading"></div>
                 <div id="loading-icon"><img src="assets/images/loader.svg" alt=""/></div>
@@ -80,17 +80,17 @@ const Contact = () => {
             </div>
         </header>
 
-        {/* Page Header Start */}
-        <div className="page-header bg-section parallaxie">
+           {/* Page Header Start */}
+           <div className="page-header bg-section parallaxie">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="page-header-box">
-                            <h1 className="text-anime-style-3" data-cursor="-opaque">Contact Us</h1>
+                            <h1 className="text-anime-style-3" data-cursor="-opaque">Our Drivers</h1>
                             <nav className="wow fadeInUp">
                                 <ol className="breadcrumb">
                                     <li className="breadcrumb-item"><Link to="/">home</Link></li>
-                                    <li className="breadcrumb-item active" aria-current="page">contact us</li>
+                                    <li className="breadcrumb-item active" aria-current="page">drivers</li>
                                 </ol>
                             </nav>
                         </div>
@@ -99,104 +99,203 @@ const Contact = () => {
             </div>
         </div>
 
-        {/*Page Contact Us Start */}
-    <div className="page-contact-us">
-        <div className="contact-info-form">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-6">
-                        <div className="contact-information">
-                            <div className="section-title">
-                                <h2 className="text-anime-style-3" data-cursor="-opaque">Contact information</h2>
-                                <p>Say something to start a live chat!</p>
-                            </div>
-                            
-                            <div className="contact-info-list">
-                                <div className="contact-info-item wow fadeInUp" data-wow-delay="0.25s">
-                                    <div className="icon-box">
-                                        <img src="assets/images/icon-phone.svg" alt=""/>
-                                    </div>
-                                    
-                                    <div className="contact-info-content">
-                                        <p>(+01) 789 854 856</p>
-                                    </div>
-                                </div>
-                              
-                                <div className="contact-info-item wow fadeInUp" data-wow-delay="0.5s">
-                                    <div className="icon-box">
-                                        <img src="assets/images/icon-mail.svg" alt=""/>
-                                    </div>
-                                    
-                                    <div className="contact-info-content">
-                                        <p>info@domain.com</p>
-                                    </div>
-                                   
-                                </div>
-                            
-                                <div className="contact-info-item wow fadeInUp" data-wow-delay="0.75s">
-                                    <div className="icon-box">
-                                        <img src="assets/images/icon-location.svg" alt=""/>
-                                    </div>
-                                 
-                                    <div className="contact-info-content">
-                                        <p>1234 Elm Street, Suite 567 Springfield, United States</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div className="contact-info-social wow fadeInUp" data-wow-delay="0.5s">
+        {/* Page Drivers Start*/}
+    <div className="page-drivers">
+        <div className="container">
+            <div className="row">
+                <div className="col-lg-3 col-md-6">
+                    <div className="team-member-item wow fadeInUp">
+                        <div className="team-image">
+                            <figure className="image-anime">
+                                <img src="assets/images/team-1.jpg" alt=""/>
+                            </figure>
+                
+                            <div className="team-social-icon">
                                 <ul>
-                                    <li><Link to="#"><i class="fa-brands fa-facebook-f"></i></Link></li>
-                                    <li><Link to="#"><i class="fa-brands fa-twitter"></i></Link></li>
-                                    <li><Link to ="#"><i class="fa-brands fa-linkedin-in"></i></Link></li>
-                                    <li><Link to="#"><i class="fa-brands fa-instagram"></i></Link></li>                                                                
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-facebook-f"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-youtube"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-instagram"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-x-twitter"></i></Link></li>
                                 </ul>
                             </div>
                         </div>
+                       
+                        <div className="team-content">
+                            <h3>john smith</h3>
+                            <p>senior chauffeur</p>
+                        </div>
                     </div>
-    
-                    <div className="col-lg-6">
-                        <div className="contact-us-form">
-                            <form id="contactForm" action="#" method="POST" data-toggle="validator" className="wow fadeInUp" data-wow-delay="0.5s">
-                                <div className="row">
-                                    <div className="form-group col-md-6 mb-4">
-                                        <label>first name</label>
-                                        <input type="text" name="name" className="form-control" id="fname" placeholder="Enter Your Name" required/>
-                                        <div className="help-block with-errors"></div>
-                                    </div>
-    
-                                    <div className="form-group col-md-6 mb-4">
-                                        <label>last name</label>
-                                        <input type="text" name="name" className="form-control" id="lname" placeholder="Enter Your Name" required/>
-                                        <div className="help-block with-errors"></div>
-                                    </div>
-    
-                                    <div className="form-group col-md-6 mb-4">
-                                        <label>email</label>
-                                        <input type="email" name ="email" className="form-control" id="email" placeholder="Enter Your Email" required/>
-                                        <div className="help-block with-errors"></div>
-                                    </div>
-    
-                                    <div className="form-group col-md-6 mb-4">
-                                        <label>phone</label>
-                                        <input type="text" name="phone" className="form-control" id="phone" placeholder="Enter Your Number" required/>
-                                        <div className="help-block with-errors"></div>
-                                    </div>
-    
-                                    <div className="form-group col-md-12 mb-4">
-                                        <label>message</label>
-                                        <textarea name="msg" className="form-control" id="msg" rows="4" placeholder="Write Your Message" required></textarea>
-                                        <div className="help-block with-errors"></div>
-                                    </div>
-    
-                                    <div className="col-lg-12">
-                                        <div className="contact-form-btn">
-                                            <button type="submit" className="btn-default">send message</button>
-                                            <div id="msgSubmit" className="h3 hidden"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
+                </div>
+
+                <div className="col-lg-3 col-md-6">
+                    <div className="team-member-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div className="team-image">
+                            <figure className="image-anime">
+                                <img src="assets/images/team-2.jpg" alt=""/>
+                            </figure>
+                
+                            <div className="team-social-icon">
+                                <ul>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-facebook-f"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-youtube"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-instagram"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div className="team-content">
+                            <h3>taylor smith</h3>
+                            <p>city tour guide</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-lg-3 col-md-6">
+                    <div className="team-member-item wow fadeInUp" data-wow-delay="0.4s">
+                        <div className="team-image">
+                            <figure className="image-anime">
+                                <img src="assets/images/team-3.jpg" alt=""/>
+                            </figure>
+                
+                            <div className="team-social-icon">
+                                <ul>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-facebook-f"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-youtube"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-instagram"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                </ul>
+                            </div>
+                        </div>
+                       
+                        <div className="team-content">
+                            <h3>jordan brown</h3>
+                            <p>distance driver</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-lg-3 col-md-6">
+                    <div className="team-member-item wow fadeInUp" data-wow-delay="0.6s">
+                        <div className="team-image">
+                            <figure className="image-anime">
+                                <img src="assets/images/team-4.jpg" alt=""/>
+                            </figure>
+                
+                            <div className="team-social-icon">
+                                <ul>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-facebook-f"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-youtube"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-instagram"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                </ul>
+                            </div>
+                        </div>
+                       
+                        <div className="team-content">
+                            <h3>davis casey</h3>
+                            <p>travel specialist</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div className="col-lg-3 col-md-6">
+                    <div className="team-member-item wow fadeInUp" data-wow-delay="0.8s">
+                        <div className="team-image">
+                            <figure className="image-anime">
+                                <img src="assets/images/team-5.jpg" alt=""/>
+                            </figure>
+                
+                            <div className="team-social-icon">
+                                <ul>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-facebook-f"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-youtube"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-instagram"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                        <div className="team-content">
+                            <h3>morgan lee</h3>
+                            <p>travel consultant</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div className="col-lg-3 col-md-6">
+                    <div className="team-member-item wow fadeInUp" data-wow-delay="1s">
+                        <div className="team-image">
+                            <figure className="image-anime">
+                                <img src="assets/images/team-6.jpg" alt=""/>
+                            </figure>
+                
+                            <div className="team-social-icon">
+                                <ul>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-facebook-f"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-youtube"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-instagram"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                </ul>
+                            </div>
+                        </div>
+                       
+                        <div className="team-content">
+                            <h3>carlos mendes</h3>
+                            <p>airport transfer</p>
+                        </div>
+                   
+                    </div>
+                   
+                </div>
+
+                <div className="col-lg-3 col-md-6">
+                    <div className="team-member-item wow fadeInUp" data-wow-delay="1.2s">
+                        <div className="team-image">
+                            <figure className="image-anime">
+                                <img src="assets/images/team-7.jpg" alt=""/>
+                            </figure>
+                
+                            <div className="team-social-icon">
+                                <ul>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-facebook-f"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-youtube"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-instagram"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                </ul>                 
+                            </div>
+                        </div>
+                
+                    
+                        <div className="team-content">
+                            <h3>riley walker</h3>
+                            <p>executive chauffeur</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-lg-3 col-md-6">
+                    <div className="team-member-item wow fadeInUp" data-wow-delay="1.4s">
+                        <div className="team-image">
+                            <figure className="image-anime">
+                                <img src="assets/images/team-8.jpg" alt=""/>
+                            </figure>
+                
+                            <div className="team-social-icon">
+                                <ul>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-facebook-f"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-youtube"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-instagram"></i></Link></li>
+                                    <li><Link to="#" className="social-icon"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                        <div className="team-content">
+                            <h3>avery hall</h3>
+                            <p>shuttle driver</p>
                         </div>
                     </div>
                 </div>
@@ -204,29 +303,8 @@ const Contact = () => {
         </div>
     </div>
 
-    {/* Google Map Start*/}
-	<div className="google-map">
-        <div className="container">
-            <div className="row section-row">
-                <div className="col-lg-12">
-                    <div className="section-title">
-                        <h3 className="wow fadeInUp">location</h3>
-                        <h2 className="text-anime-style-3" data-cursor="-opaque">How to reach our location</h2>
-                    </div>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-lg-12">
-                    <div className="google-map-iframe">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96737.10562045308!2d-74.08535042841811!3d40.739265258395164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1703158537552!5m2!1sen!2sin" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-     {/* Footer Start*/}
-     <footer className="main-footer bg-section">
+    {/* Footer Start*/}
+    <footer className="main-footer bg-section">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-3">
@@ -306,12 +384,10 @@ const Contact = () => {
 
 
 
-
-
-
-          )
+        
+        )
     </>
     );
 }
 
-export default Contact;
+export default Drivers;

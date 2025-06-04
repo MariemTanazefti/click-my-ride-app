@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Contact = () => {
+const DriverSingle = () => {
     return (
 
         <>
-        {/* Preloader Start*/ }
-        <div className="preloader">
+
+                {/* Preloader Start*/ }
+                <div className="preloader">
             <div className="loading-container">
                 <div className="loading"></div>
                 <div id="loading-icon"><img src="assets/images/loader.svg" alt=""/></div>
@@ -80,17 +81,19 @@ const Contact = () => {
             </div>
         </header>
 
+        
         {/* Page Header Start */}
         <div className="page-header bg-section parallaxie">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="page-header-box">
-                            <h1 className="text-anime-style-3" data-cursor="-opaque">Contact Us</h1>
+                            <h1 className="text-anime-style-3" data-cursor="-opaque">John Smith</h1>
                             <nav className="wow fadeInUp">
                                 <ol className="breadcrumb">
                                     <li className="breadcrumb-item"><Link to="/">home</Link></li>
-                                    <li className="breadcrumb-item active" aria-current="page">contact us</li>
+                                    <li className="breadcrumb-item"><Link to="/">drivers</Link></li>
+                                    <li className="breadcrumb-item active" aria-current="page">John Smith</li>
                                 </ol>
                             </nav>
                         </div>
@@ -99,134 +102,160 @@ const Contact = () => {
             </div>
         </div>
 
-        {/*Page Contact Us Start */}
-    <div className="page-contact-us">
-        <div className="contact-info-form">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-6">
-                        <div className="contact-information">
-                            <div className="section-title">
-                                <h2 className="text-anime-style-3" data-cursor="-opaque">Contact information</h2>
-                                <p>Say something to start a live chat!</p>
+        {/* Page Team Single Start */}
+    <div className="page-team-single">
+        <div className="container">
+            <div className="row">
+                <div className="col-lg-5">
+                    <div className="team-member-details">
+                        <div className="team-member-image">
+                            <figure className="image-anime">
+                                <img src="assets/images/team-1.jpg" alt=""/>
+                            </figure>
+                        </div>
+                       
+                        <div className="team-member-content">
+                            <div className="team-member-title">
+                                <h2 className="wow fadeInUp">john smith</h2>
+                                <p className="wow fadeInUp" data-wow-delay="0.25s">senior chauffeur</p>
                             </div>
-                            
-                            <div className="contact-info-list">
-                                <div className="contact-info-item wow fadeInUp" data-wow-delay="0.25s">
-                                    <div className="icon-box">
-                                        <img src="assets/images/icon-phone.svg" alt=""/>
-                                    </div>
-                                    
-                                    <div className="contact-info-content">
-                                        <p>(+01) 789 854 856</p>
-                                    </div>
-                                </div>
-                              
-                                <div className="contact-info-item wow fadeInUp" data-wow-delay="0.5s">
-                                    <div className="icon-box">
-                                        <img src="assets/images/icon-mail.svg" alt=""/>
-                                    </div>
-                                    
-                                    <div className="contact-info-content">
-                                        <p>info@domain.com</p>
-                                    </div>
-                                   
-                                </div>
-                            
-                                <div className="contact-info-item wow fadeInUp" data-wow-delay="0.75s">
-                                    <div className="icon-box">
-                                        <img src="assets/images/icon-location.svg" alt=""/>
-                                    </div>
-                                 
-                                    <div className="contact-info-content">
-                                        <p>1234 Elm Street, Suite 567 Springfield, United States</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div className="contact-info-social wow fadeInUp" data-wow-delay="0.5s">
+                          
+                            <div className="team-member-body wow fadeInUp" data-wow-delay="0.5s">
                                 <ul>
-                                    <li><Link to="#"><i class="fa-brands fa-facebook-f"></i></Link></li>
-                                    <li><Link to="#"><i class="fa-brands fa-twitter"></i></Link></li>
-                                    <li><Link to ="#"><i class="fa-brands fa-linkedin-in"></i></Link></li>
-                                    <li><Link to="#"><i class="fa-brands fa-instagram"></i></Link></li>                                                                
+                                    <li><span>Phone: </span>(+01) 789 456 789</li>
+                                    <li><span>Email: </span>domain@gmail.com</li>
+                                    <li><span>Position: </span>Senior Chauffeur</li>
+                                </ul>
+                            </div>
+                            
+                            <div className="member-social-list">
+                                <ul className="wow fadeInUp" data-wow-delay="0.75s">
+                                    <li><Link to="#"><i className="fa-brands fa-facebook-f"></i></Link></li>
+                                    <li><Link to="#"><i className="fa-brands fa-youtube"></i></Link></li>
+                                    <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                    <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>									
                                 </ul>
                             </div>
                         </div>
                     </div>
-    
-                    <div className="col-lg-6">
-                        <div className="contact-us-form">
-                            <form id="contactForm" action="#" method="POST" data-toggle="validator" className="wow fadeInUp" data-wow-delay="0.5s">
-                                <div className="row">
-                                    <div className="form-group col-md-6 mb-4">
-                                        <label>first name</label>
-                                        <input type="text" name="name" className="form-control" id="fname" placeholder="Enter Your Name" required/>
-                                        <div className="help-block with-errors"></div>
+                </div>
+
+                <div className="col-lg-7">
+                    <div className="team-member-intro">
+                        <div className="section-title">
+                            <h3 className="wow fadeInUp">Introduction</h3>
+                            <h2 className="text-anime-style-3" data-cursor="-opaque">John biography</h2>
+                        </div>
+
+                        <div className="team-intro-content">
+                            <p className="wow fadeInUp">We pride ourselves on having a team of highly skilled and professional drivers dedicated to providing you with the best possible service. Here are some of the top drivers who make your journeys safe, comfortable, and enjoyable:</p>
+                            <p className="wow fadeInUp" data-wow-delay="0.25s">John brings over 15 years of professional driving experience to our team. His extensive knowledge of the city, coupled with his impeccable driving skills, ensures that you reach your destination safely and on time. John is known for his punctuality and professionalism, making him a favorite among our corporate clients.</p>
+                        </div>
+
+                        <div className="team-member-specialty wow fadeInUp" data-wow-delay="0.5s">
+                            <ul>
+                                <li><span>Experience :</span> 15 years</li>
+                                <li><span>Specialty :</span> Senior Chauffeur, Airport Transfer</li>
+                                <li><span>Specialty :</span> English, spanish</li>
+                            </ul>
+                        </div>
+                    </div>
+                   
+                    <div className="team-member-features">
+                        <div className="section-title">
+                            <h3 className="wow fadeInUp">features</h3>
+                            <h2 className="text-anime-style-3" data-cursor="-opaque">Know about john</h2>
+                        </div>
+
+                        <div className="team-features-content wow fadeInUp" data-wow-delay="0.25s">
+                            <p>We pride ourselves on having a team of highly skilled and professional drivers dedicated to providing you with the best possible service.</p>
+                        </div>
+                        
+                        <div className="team-features-list wow fadeInUp" data-wow-delay="0.5s">
+                            <ul>
+                                <li>Qualified and Experienced</li>
+                                <li>Safety First</li>
+                                <li>Highly Trained</li>
+                                <li>Personalized Experience</li>
+                                <li>Years of Experience</li>
+                                <li>Local Knowledge</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="team-member-testimonials">
+                       <div className="section-title">
+                            <h3 className="wow fadeInUp">testimonials</h3>
+                            <h2 className="text-anime-style-3" data-cursor="-opaque">Customers feedback</h2>
+                        </div>
+                        
+                        <div className="team-member-slider">
+                            <div className="swiper">
+                                <div className="swiper-wrapper" data-cursor-text="Drag">
+                                    <div className="swiper-slide">
+                                        <div className="team-feedback-item">
+                                            <div className="quote-icon-box">
+                                                <img src="assets/images/icon-quote-img-1.svg" alt=""/>
+                                            </div>
+                                            
+                                            <div className="team-feedback-content">
+                                                <p>John is professionalism and attention to detail are outstanding. We felt safe and well-cared-for throughout our journey.</p>
+                                            </div>
+                                            
+                                            <div className="team-feedback-body">
+                                                <h3>dakota young</h3>
+                                                <p>customers</p>
+                                            </div>
+                                        </div>
+                                        
                                     </div>
-    
-                                    <div className="form-group col-md-6 mb-4">
-                                        <label>last name</label>
-                                        <input type="text" name="name" className="form-control" id="lname" placeholder="Enter Your Name" required/>
-                                        <div className="help-block with-errors"></div>
-                                    </div>
-    
-                                    <div className="form-group col-md-6 mb-4">
-                                        <label>email</label>
-                                        <input type="email" name ="email" className="form-control" id="email" placeholder="Enter Your Email" required/>
-                                        <div className="help-block with-errors"></div>
-                                    </div>
-    
-                                    <div className="form-group col-md-6 mb-4">
-                                        <label>phone</label>
-                                        <input type="text" name="phone" className="form-control" id="phone" placeholder="Enter Your Number" required/>
-                                        <div className="help-block with-errors"></div>
-                                    </div>
-    
-                                    <div className="form-group col-md-12 mb-4">
-                                        <label>message</label>
-                                        <textarea name="msg" className="form-control" id="msg" rows="4" placeholder="Write Your Message" required></textarea>
-                                        <div className="help-block with-errors"></div>
-                                    </div>
-    
-                                    <div className="col-lg-12">
-                                        <div className="contact-form-btn">
-                                            <button type="submit" className="btn-default">send message</button>
-                                            <div id="msgSubmit" className="h3 hidden"></div>
+                                    
+                                    <div className="swiper-slide">
+                                        <div className="team-feedback-item">
+                                            <div className="quote-icon-box">
+                                                <img src="assets/simages/icon-quote-img-1.svg" alt=""/>
+                                            </div>
+                                           
+                                            <div className="team-feedback-content">
+                                                <p>John is professionalism and attention to detail are outstanding. We felt safe and well-cared-for throughout our journey.</p>
+                                            </div>
+                                            
+                                            <div className="team-feedback-body">
+                                                <h3>casey davis</h3>
+                                                <p>customers</p>
+                                            </div>
                                         </div>
                                     </div>
+                                   
+                                    <div className="swiper-slide">
+                                        <div className="team-feedback-item">
+                                            <div className="quote-icon-box">
+                                                <img src="assets/images/icon-quote-img-1.svg" alt=""/>
+                                            </div>
+                                            
+                                            <div className="team-feedback-content">
+                                                <p>John is professionalism and attention to detail are outstanding. We felt safe and well-cared-for throughout our journey.</p>
+                                            </div>
+                                            
+                                            <div className="team-feedback-body">
+                                                <h3>jamie clark</h3>
+                                                <p>customers</p>
+                                            </div>
+                                           
+                                        </div>
+                                      
+                                    </div>
                                 </div>
-                            </form>
+                                <div className="swiper-pagination"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    {/* Google Map Start*/}
-	<div className="google-map">
-        <div className="container">
-            <div className="row section-row">
-                <div className="col-lg-12">
-                    <div className="section-title">
-                        <h3 className="wow fadeInUp">location</h3>
-                        <h2 className="text-anime-style-3" data-cursor="-opaque">How to reach our location</h2>
-                    </div>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-lg-12">
-                    <div className="google-map-iframe">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96737.10562045308!2d-74.08535042841811!3d40.739265258395164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1703158537552!5m2!1sen!2sin" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-     {/* Footer Start*/}
-     <footer className="main-footer bg-section">
+    {/* Footer Start*/}
+    <footer className="main-footer bg-section">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-3">
@@ -306,12 +335,9 @@ const Contact = () => {
 
 
 
-
-
-
-          )
+       )
     </>
     );
 }
 
-export default Contact;
+export default DriverSingle;

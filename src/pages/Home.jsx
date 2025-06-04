@@ -47,12 +47,12 @@ const Home = () => {
                                             </ul>
                                         </li>
                                         <li className="nav-item"><Link to="/about" className="nav-link">About Us</Link></li>
-                                        <li className="nav-item"><Link to="service.jsx" className="nav-link">Services</Link></li>
-                                        <li className="nav-item submenu"><Link to="/" className="nav-link">Cars</Link>
+                                        <li className="nav-item"><Link to="/service" className="nav-link">Services</Link></li>
+                                        <li className="nav-item submenu"><Link to="/cars" className="nav-link">Cars</Link>
                                             <ul>
                                                 <li className="nav-item"><Link to="Cars.jsx" className="nav-link">Car Lists</Link></li>
-                                                <li className="nav-item"><Link to="car-single.jsx" className="nav-link">Car Details</Link></li>
-                                                <li className="nav-item"><Link to="car-type.jsx" className="nav-link">Cars Type</Link></li>
+                                                <li className="nav-item"><Link to="/car-single" className="nav-link">Car Details</Link></li>
+                                                <li className="nav-item"><Link to="/car-type" className="nav-link">Cars Type</Link></li>
                                             </ul>
                                         </li>
                                         <li className="nav-item submenu"><Link to="/" className="nav-link">Pages</Link>
@@ -1334,9 +1334,9 @@ const Home = () => {
                         <h3>quick links</h3>
                         <ul>                            
                             <li><Link to="/">home</Link></li>
-                            <li><Link to="/">about us</Link></li>
-                            <li><Link to="/">cars</Link></li>
-                            <li><Link to="/">services</Link></li>
+                            <li><Link to="/about">about us</Link></li>
+                            <li><Link to="/cars">cars</Link></li>
+                            <li><Link to="/service">services</Link></li>
                         </ul>
                     </div>
                 </div>

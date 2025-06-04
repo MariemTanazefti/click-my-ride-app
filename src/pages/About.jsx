@@ -99,22 +99,22 @@ const About = () => {
                       </Link>
                     </li>
                     <li className="nav-item submenu">
-                      <Link to="/" className="nav-link" >
+                      <Link to="/cars" className="nav-link" >
                         Cars
                       </Link>
                       <ul>
                         <li className="nav-item">
-                          <Link to="Cars.jsx" className="nav-link" >
+                          <Link to="/Cars.jsx" className="nav-link" >
                             Car Lists
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link to="car-single.jsx" className="nav-link" >
+                          <Link to="/car-single" className="nav-link" >
                             Car Details
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link to="car-type.jsx" className="nav-link" >
+                          <Link to="/car-type" className="nav-link" >
                             Cars Type
                           </Link>
                         </li>
@@ -126,64 +126,64 @@ const About = () => {
                       </Link>
                       <ul>
                         <li className="nav-item">
-                          <Link to="service-single.jsx" className="nav-link" >
+                          <Link to="/service-single" className="nav-link" >
                             Service Details
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link to="blog.jsx" className="nav-link" >
+                          <Link to="/blog" className="nav-link" >
                             Blog
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link To="blog-single.jsx" className="nav-link" >
+                          <Link To="/blog-single" className="nav-link" >
                             Blog Details
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link to="drivers.jsx" className="nav-link" >
+                          <Link to="/drivers" className="nav-link" >
                             Drivers
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link to="driver-single.jsx" className="nav-link" >
+                          <Link to="/driver-single" className="nav-link" >
                             Driver Details
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link to="pricing.jsx" className="nav-link" >
+                          <Link to="/pricing" className="nav-link" >
                             Pricing
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link to="image-gallery.jsx" className="nav-link" >
+                          <Link to="/image-gallery" className="nav-link" >
                             Image Gallery
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link to="video-gallery.jsx" className="nav-link" >
+                          <Link to="/video-gallery" className="nav-link" >
                             Video Gallery
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link to="testimonials.jsx" className="nav-link" >
+                          <Link to="/testimonials" className="nav-link" >
                             Testimonials
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link to="faqs.jsx" className="nav-link" >
+                          <Link to="/faqs" className="nav-link" >
                             FAQ's
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link to="404.jsx" className="nav-link" >
+                          <Link to="/404" className="nav-link" >
                             404
                           </Link>
                         </li>
                       </ul>
                     </li>
                     <li className="nav-item">
-                      <Link to="contact.jsx" className="nav-link" >
+                      <Link to="/contact" className="nav-link" >
                         Contact Us
                       </Link>
                     </li>
@@ -1000,9 +1000,9 @@ const About = () => {
                         <h3>quick links</h3>
                         <ul>                            
                             <li><Link to="/">home</Link></li>
-                            <li><Link to="/">about us</Link></li>
-                            <li><Link to="/">cars</Link></li>
-                            <li><Link to="/">services</Link></li>
+                            <li><Link to="/about">about us</Link></li>
+                            <li><Link to="/cars">cars</Link></li>
+                            <li><Link to="/service">services</Link></li>
                         </ul>
                     </div>
                 </div>

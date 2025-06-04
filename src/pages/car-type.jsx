@@ -1,11 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
-const Contact = () => {
-    return (
 
-        <>
-        {/* Preloader Start*/ }
-        <div className="preloader">
+import { Link } from "react-router-dom";
+
+const CarType = () => {
+  return (
+    <>
+    {/* Preloader Start*/ }
+    <div className="preloader">
             <div className="loading-container">
                 <div className="loading"></div>
                 <div id="loading-icon"><img src="assets/images/loader.svg" alt=""/></div>
@@ -80,17 +81,18 @@ const Contact = () => {
             </div>
         </header>
 
-        {/* Page Header Start */}
-        <div className="page-header bg-section parallaxie">
+
+         {/* Page Header Start */}
+         <div className="page-header bg-section parallaxie">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="page-header-box">
-                            <h1 className="text-anime-style-3" data-cursor="-opaque">Contact Us</h1>
+                            <h1 className="text-anime-style-3" data-cursor="-opaque">Car Type</h1>
                             <nav className="wow fadeInUp">
                                 <ol className="breadcrumb">
                                     <li className="breadcrumb-item"><Link to="/">home</Link></li>
-                                    <li className="breadcrumb-item active" aria-current="page">contact us</li>
+                                    <li className="breadcrumb-item active" aria-current="page">car type</li>
                                 </ol>
                             </nav>
                         </div>
@@ -99,134 +101,137 @@ const Contact = () => {
             </div>
         </div>
 
-        {/*Page Contact Us Start */}
-    <div className="page-contact-us">
-        <div className="contact-info-form">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-6">
-                        <div className="contact-information">
-                            <div className="section-title">
-                                <h2 className="text-anime-style-3" data-cursor="-opaque">Contact information</h2>
-                                <p>Say something to start a live chat!</p>
-                            </div>
-                            
-                            <div className="contact-info-list">
-                                <div className="contact-info-item wow fadeInUp" data-wow-delay="0.25s">
-                                    <div className="icon-box">
-                                        <img src="assets/images/icon-phone.svg" alt=""/>
-                                    </div>
-                                    
-                                    <div className="contact-info-content">
-                                        <p>(+01) 789 854 856</p>
-                                    </div>
-                                </div>
-                              
-                                <div className="contact-info-item wow fadeInUp" data-wow-delay="0.5s">
-                                    <div className="icon-box">
-                                        <img src="assets/images/icon-mail.svg" alt=""/>
-                                    </div>
-                                    
-                                    <div className="contact-info-content">
-                                        <p>info@domain.com</p>
-                                    </div>
-                                   
-                                </div>
-                            
-                                <div className="contact-info-item wow fadeInUp" data-wow-delay="0.75s">
-                                    <div className="icon-box">
-                                        <img src="assets/images/icon-location.svg" alt=""/>
-                                    </div>
-                                 
-                                    <div className="contact-info-content">
-                                        <p>1234 Elm Street, Suite 567 Springfield, United States</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div className="contact-info-social wow fadeInUp" data-wow-delay="0.5s">
-                                <ul>
-                                    <li><Link to="#"><i class="fa-brands fa-facebook-f"></i></Link></li>
-                                    <li><Link to="#"><i class="fa-brands fa-twitter"></i></Link></li>
-                                    <li><Link to ="#"><i class="fa-brands fa-linkedin-in"></i></Link></li>
-                                    <li><Link to="#"><i class="fa-brands fa-instagram"></i></Link></li>                                                                
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div className="col-lg-6">
-                        <div className="contact-us-form">
-                            <form id="contactForm" action="#" method="POST" data-toggle="validator" className="wow fadeInUp" data-wow-delay="0.5s">
-                                <div className="row">
-                                    <div className="form-group col-md-6 mb-4">
-                                        <label>first name</label>
-                                        <input type="text" name="name" className="form-control" id="fname" placeholder="Enter Your Name" required/>
-                                        <div className="help-block with-errors"></div>
-                                    </div>
-    
-                                    <div className="form-group col-md-6 mb-4">
-                                        <label>last name</label>
-                                        <input type="text" name="name" className="form-control" id="lname" placeholder="Enter Your Name" required/>
-                                        <div className="help-block with-errors"></div>
-                                    </div>
-    
-                                    <div className="form-group col-md-6 mb-4">
-                                        <label>email</label>
-                                        <input type="email" name ="email" className="form-control" id="email" placeholder="Enter Your Email" required/>
-                                        <div className="help-block with-errors"></div>
-                                    </div>
-    
-                                    <div className="form-group col-md-6 mb-4">
-                                        <label>phone</label>
-                                        <input type="text" name="phone" className="form-control" id="phone" placeholder="Enter Your Number" required/>
-                                        <div className="help-block with-errors"></div>
-                                    </div>
-    
-                                    <div className="form-group col-md-12 mb-4">
-                                        <label>message</label>
-                                        <textarea name="msg" className="form-control" id="msg" rows="4" placeholder="Write Your Message" required></textarea>
-                                        <div className="help-block with-errors"></div>
-                                    </div>
-    
-                                    <div className="col-lg-12">
-                                        <div className="contact-form-btn">
-                                            <button type="submit" className="btn-default">send message</button>
-                                            <div id="msgSubmit" className="h3 hidden"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    {/* Google Map Start*/}
-	<div className="google-map">
+        {/* Page Cars Start */}
+    <div className="page-cars">
         <div className="container">
-            <div className="row section-row">
-                <div className="col-lg-12">
-                    <div className="section-title">
-                        <h3 className="wow fadeInUp">location</h3>
-                        <h2 className="text-anime-style-3" data-cursor="-opaque">How to reach our location</h2>
+            <div className="row">
+                <div className="col-lg-4 col-md-6">
+                    <div className="luxury-collection-item luxury-car-type wow fadeInUp">
+                        <div className="luxury-collection-image" data-cursor-text="View">
+                            <Link to="/">
+                                <figure>
+                                    <img src="assets/images/luxury-collection-img-1.jpg" alt=""/>
+                                </figure>
+                            </Link>
+                        </div>
+
+                        <div className="luxury-collection-title">
+                            <h2>sport car</h2>
+                        </div>
+                        
+                        <div className="luxury-collection-btn">
+                            <Link to="/" className="section-icon-btn"><img src="assets/images/arrow-white.svg" alt=""/></Link>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="row">
-                <div className="col-lg-12">
-                    <div className="google-map-iframe">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96737.10562045308!2d-74.08535042841811!3d40.739265258395164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1703158537552!5m2!1sen!2sin" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+
+                <div className="col-lg-4 col-md-6">
+                    <div className="luxury-collection-item luxury-car-type wow fadeInUp" data-wow-delay="0.25s">
+                        <div className="luxury-collection-image" data-cursor-text="View">
+                            <Link to="/">
+                                <figure>
+                                    <img src="assets/images/luxury-collection-img-2.jpg" alt=""/>
+                                </figure>
+                            </Link>
+                        </div>
+
+                        <div className="luxury-collection-title">
+                            <h2>convertible car</h2>
+                        </div>
+                        
+                        <div className="luxury-collection-btn">
+                            <Link to="/" class="section-icon-btn"><img src="assets/images/arrow-white.svg" alt=""/></Link>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-lg-4 col-md-6">
+                    <div className="luxury-collection-item luxury-car-type wow fadeInUp" data-wow-delay="0.5s">
+                        <div className="luxury-collection-image" data-cursor-text="View">
+                            <Link to="/">
+                                <figure>
+                                    <img src="assets/images/luxury-collection-img-3.jpg" alt=""/>
+                                </figure>
+                            </Link>
+                        </div>
+                       
+                        <div className="luxury-collection-title">
+                            <h2>sedan car</h2>
+                        </div>
+                        
+                        <div className="luxury-collection-btn">
+                            <Link to="/" className="section-icon-btn"><img src="assets/images/arrow-white.svg" alt=""/></Link>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-lg-4 col-md-6">
+                    <div className="luxury-collection-item luxury-car-type wow fadeInUp" data-wow-delay="0.75s">
+                        <div className="luxury-collection-image" data-cursor-text="View">
+                            <Link to="/">
+                                <figure>
+                                    <img src="assets/images/luxury-collection-img-4.jpg" alt=""/>
+                                </figure>
+                            </Link>
+                        </div>
+                        
+                        <div className="luxury-collection-title">
+                            <h2>luxury car</h2>
+                        </div>
+                        
+                        <div className="luxury-collection-btn">
+                            <Link to="/" className="section-icon-btn"><img src="assets/images/arrow-white.svg" alt=""/></Link>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-lg-4 col-md-6">
+                    <div className="luxury-collection-item luxury-car-type wow fadeInUp" data-wow-delay="1s">
+                        <div className="luxury-collection-image" data-cursor-text="View">
+                            <Link to="/">
+                                <figure>
+                                    <img src="assets/images/luxury-collection-img-5.jpg" alt=""/>
+                                </figure>
+                            </Link>
+                        </div>
+                        
+                        <div className="luxury-collection-title">
+                            <h2>electric car</h2>
+                        </div>
+                        
+                        <div className="luxury-collection-btn">
+                            <Link to="/" className="section-icon-btn"><img src="assets/images/arrow-white.svg" alt=""/></Link>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-lg-4 col-md-6">
+                    <div className="luxury-collection-item luxury-car-type wow fadeInUp" data-wow-delay="1.25s">
+                        <div className="luxury-collection-image" data-cursor-text="View">
+                            <Link to="/">
+                                <figure>
+                                    <img src="assets/images/luxury-collection-img-6.jpg" alt=""/>
+                                </figure>
+                            </Link>
+                        </div>
+                        
+                        <div className="luxury-collection-title">
+                            <h2>coupe car</h2>
+                        </div>
+                        
+                        <div className="luxury-collection-btn">
+                            <Link to="/" className="section-icon-btn"><img src="assets/images/arrow-white.svg" alt=""/></Link>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-     {/* Footer Start*/}
-     <footer className="main-footer bg-section">
+    
+    {/* Footer Start*/}
+    <footer className="main-footer bg-section">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-3">
@@ -302,16 +307,12 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> 
 
 
-
-
-
-
-          )
+       )
     </>
     );
 }
 
-export default Contact;
+export default CarType;
