@@ -172,7 +172,7 @@ const Pricing = () => {
                         </div>
                        
                         <div className="cta-box-btn  wow fadeInUp" data-wow-delay="0.25s">
-                            <Link to="#" class="btn-default">contact us</Link>
+                            <Link to="#" className="btn-default">contact us</Link>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
 const Home = () => {
     return (
 
@@ -50,27 +54,27 @@ const Home = () => {
                                         <li className="nav-item"><Link to="/service" className="nav-link">Services</Link></li>
                                         <li className="nav-item submenu"><Link to="/cars" className="nav-link">Cars</Link>
                                             <ul>
-                                                <li className="nav-item"><Link to="Cars.jsx" className="nav-link">Car Lists</Link></li>
+                                                <li className="nav-item"><Link to="/cars" className="nav-link">Car Lists</Link></li>
                                                 <li className="nav-item"><Link to="/car-single" className="nav-link">Car Details</Link></li>
                                                 <li className="nav-item"><Link to="/car-type" className="nav-link">Cars Type</Link></li>
                                             </ul>
                                         </li>
                                         <li className="nav-item submenu"><Link to="/" className="nav-link">Pages</Link>
                                             <ul>
-                                                <li className="nav-item"><Link to="service-single.jsx" className="nav-link">Service Details</Link></li>
-                                                <li className="nav-item"><Link to="blog.jsx" className="nav-link">Blog</Link></li>
-                                                <li className="nav-item"><Link to="blog-single.jsx" className="nav-link">Blog Details</Link></li>
-                                                <li className="nav-item"><Link to="drivers.jsx" className="nav-link">Drivers</Link></li>
-                                                <li className="nav-item"><Link to="driver-single.jsx" className="nav-link">Driver Details</Link></li>
-                                                <li className="nav-item"><Link to="pricing.jsx" className="nav-link">Pricing</Link></li>
-                                                <li className="nav-item"><Link to="image-gallery.jsx" className="nav-link">Image Gallery</Link></li>
-                                                <li className="nav-item"><Link to="video-gallery.jsx" className="nav-link">Video Gallery</Link></li>
-                                                <li className="nav-item"><Link to="testimonials.jsx" className="nav-link">Testimonials</Link></li>
-                                                <li className="nav-item"><Link to="faqs.html" className="nav-link">FAQ's</Link></li>
-                                                <li className="nav-item"><Link to="404.html" className="nav-link">404</Link></li>
+                                                <li className="nav-item"><Link to="/service-single" className="nav-link">Service Details</Link></li>
+                                                <li className="nav-item"><Link to="/blog" className="nav-link">Blog</Link></li>
+                                                <li className="nav-item"><Link to="/blog-single" className="nav-link">Blog Details</Link></li>
+                                                <li className="nav-item"><Link to="/drivers" className="nav-link">Drivers</Link></li>
+                                                <li className="nav-item"><Link to="/driver-single" className="nav-link">Driver Details</Link></li>
+                                                <li className="nav-item"><Link to="/pricing" className="nav-link">Pricing</Link></li>
+                                                <li className="nav-item"><Link to="/image-gallery" className="nav-link">Image Gallery</Link></li>
+                                                <li className="nav-item"><Link to="/video-gallery" className="nav-link">Video Gallery</Link></li>
+                                                <li className="nav-item"><Link to="/testimonials" className="nav-link">Testimonials</Link></li>
+                                                <li className="nav-item"><Link to="/faqs" className="nav-link">FAQ's</Link></li>
+                                                <li className="nav-item"><Link to="/404" className="nav-link">404</Link></li>
                                             </ul>
                                         </li>
-                                        <li className="nav-item"><Link to="Contact.jsx" className="nav-link">Contact Us</Link></li>
+                                        <li className="nav-item"><Link to="/Contact" className="nav-link">Contact Us</Link></li>
                                     </ul>
                                 </div>
                                 <div className="header-btn d-inline-flex">
@@ -212,7 +216,7 @@ const Home = () => {
                         </div>
 
                         <div className="about-img-2">
-                            <figure class="reveal">
+                            <figure className="reveal">
                                 <img src="assets/images/about-img-2.jpg" alt=""/>
                             </figure>
                         </div>
@@ -354,7 +358,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="row">
+           {/*  <div className="row">
                 <div className="col-lg-12">
                     <div className="car-details-slider">
                         <div className="swiper">
@@ -386,7 +390,7 @@ const Home = () => {
                                                 </div>
                                                
                                                 <div className="perfect-fleet-btn">
-                                                    <Link to="/" class="section-icon-btn"><img src="assets/images/arrow-white.svg" alt=""/></Link>
+                                                    <Link to="/" className="section-icon-btn"><img src="assets/images/arrow-white.svg" alt=""/></Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -525,7 +529,7 @@ const Home = () => {
                                                 <div className="perfect-fleet-btn">
                                                     <Link to="/" className="section-icon-btn"><img src="assets/images/arrow-white.svg" alt=""/></Link>
                                                 </div>
-=                                            </div>
+                                          </div>
                                         </div>
                                     </div>
                                 </div>
@@ -605,7 +609,171 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
+
+            <div className="row">
+                <div className="col-lg-12">
+                    <div className="car-details-slider">
+                        <Swiper
+                            modules={[Navigation]}
+                            navigation={{
+                            nextEl: '.car-button-next',
+                            prevEl: '.car-button-prev'
+                            }}
+                            spaceBetween={30}
+                            slidesPerView={3}
+                            loop={true}
+                        >
+                        <SwiperSlide>
+                        <div className="perfect-fleet-item">
+                            <div className="image-box">
+                            <img src="assets/images/perfect-fleet-img-1.png" alt="" />
+                            </div>
+                            <div className="perfect-fleet-content">
+                                <div className="perfect-fleet-title">
+                                    <h3>luxury car</h3>
+                                    <h2>BMW M2 Car 2017</h2>
+                                </div>
+                                <div className="perfect-fleet-body">
+                                    <ul>
+                                        <li><img src="assets/images/icon-fleet-list-1.svg" alt="" />4 passenger</li>
+                                        <li><img src="assets/images/icon-fleet-list-2.svg" alt="" />4 door</li>
+                                        <li><img src="assets/images/icon-fleet-list-3.svg" alt="" />bags</li>
+                                        <li><img src="assets/images/icon-fleet-list-4.svg" alt="" />auto</li>
+                                    </ul>
+                                </div>
+                                <div className="perfect-fleet-footer">
+                                    <div className="perfect-fleet-pricing">
+                                        <h2>$280<span>/day</span></h2>
+                                     </div>
+                                    <div className="perfect-fleet-btn">
+                                        <Link to="/" className="section-icon-btn">
+                                        <img src="assets/images/arrow-white.svg" alt="" />
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                        <div className="perfect-fleet-item">
+                            <div className="image-box">
+                                <img src="assets/images/perfect-fleet-img-2.png" alt="" />
+                            </div>
+                            <div className="perfect-fleet-content">
+                                <div className="perfect-fleet-title">
+                                    <h3>luxury car</h3>
+                                    <h2>Audi RS7 Car 2016</h2>
+                                </div>
+                                <div className="perfect-fleet-body">
+                                    <ul>
+                                        <li><img src="assets/images/icon-fleet-list-1.svg" alt="" />4 passenger</li>
+                                        <li><img src="assets/images/icon-fleet-list-2.svg" alt="" />4 door</li>
+                                        <li><img src="assets/images/icon-fleet-list-3.svg" alt="" />bags</li>
+                                        <li><img src="assets/images/icon-fleet-list-4.svg" alt="" />auto</li>
+                                    </ul>
+                                </div>
+                                <div className="perfect-fleet-footer">
+                                    <div className="perfect-fleet-pricing">
+                                        <h2>$320<span>/day</span></h2>
+                                    </div>
+                                    <div className="perfect-fleet-btn">
+                                        <Link to="/" className="section-icon-btn">
+                                        <img src="assets/images/arrow-white.svg" alt="" />
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <div className="swiper-slide">
+                                    <div className="perfect-fleet-item">
+                                        <div className="image-box">
+                                            <img src="assets/images/perfect-fleet-img-3.png" alt=""/>
+                                        </div>
+                                        
+                                        <div className="perfect-fleet-content">
+                                            <div className="perfect-fleet-title">
+                                                <h3>luxury car</h3>
+                                                <h2>Ferrari F12 Car 2022</h2>
+                                            </div>
+                                            
+                                            <div className="perfect-fleet-body">
+                                                <ul>
+                                                    <li><img src="assets/images/icon-fleet-list-1.svg" alt=""/>4 passenger</li>
+                                                    <li><img src="assets/images/icon-fleet-list-2.svg" alt=""/>4 door</li>
+                                                    <li><img src="assets/images/icon-fleet-list-3.svg" alt=""/>bags</li>
+                                                    <li><img src="assets/images/icon-fleet-list-4.svg" alt=""/>auto</li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div className="perfect-fleet-footer">
+                                                <div className="perfect-fleet-pricing">
+                                                    <h2>$450<span>/day</span></h2>
+                                                </div>
+
+                                                <div className="perfect-fleet-btn">
+                                                    <Link to="/" className="section-icon-btn"><img src="assets/images/arrow-white.svg" alt=""/></Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="swiper-slide">
+                                    <div className="perfect-fleet-item">
+                                        <div className="image-box">
+                                            <img src="assets/images/perfect-fleet-img-4.png" alt=""/>
+                                        </div>
+                                        
+                                        <div className="perfect-fleet-content">
+                                            <div className="perfect-fleet-title">
+                                                <h3>luxury car</h3>
+                                                <h2>Toyota Yaris 2017</h2>
+                                            </div>
+                                            
+                                            <div className="perfect-fleet-body">
+                                                <ul>
+                                                    <li><img src="assets/images/icon-fleet-list-1.svg" alt=""/>4 passenger</li>
+                                                    <li><img src="assets/images/icon-fleet-list-2.svg" alt=""/>4 door</li>
+                                                    <li><img src="assets/images/icon-fleet-list-3.svg" alt=""/>bags</li>
+                                                    <li><img src="assets/images/icon-fleet-list-4.svg" alt=""/>auto</li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div className="perfect-fleet-footer">
+                                                <div className="perfect-fleet-pricing">
+                                                    <h2>$220<span>/day</span></h2>
+                                                </div>
+
+                                                <div className="perfect-fleet-btn">
+                                                    <Link to="/" className="section-icon-btn"><img src="assets/images/arrow-white.svg" alt=""/></Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </SwiperSlide>
+
+          </Swiper>
+
+          {/* Boutons de navigation */}
+          <div className="car-details-btn">
+            <div className="car-button-prev"></div>
+            <div className="car-button-next"></div>
+          </div>
+
+                    </div>
+                    </div>
+                    </div>
+
+
+
         </div>
     </div>
 
@@ -698,7 +866,7 @@ const Home = () => {
         <div className="container">
             <div className="row align-items-center">
                 <div className="col-lg-6">
-                    <div class="how-work-content">
+                    <div className="how-work-content">
                         <div className="section-title">
                             <h3 className="wow fadeInUp">how it work</h3>
                             <h2 className="text-anime-style-3" data-cursor="-opaque">Streamlined processes for a hassle-free experience</h2>
@@ -801,7 +969,7 @@ const Home = () => {
 
             <div className="row">
                 <div className="col-lg-12">
-					<div class="intro-video-box">
+					<div className="intro-video-box">
                         <div className="video-play-button">
                             <Link to="https://www.youtube.com/watch?v=Y-x0efG1seA" class="popup-video" data-cursor-text="Play">
                                 <i class="fa-solid fa-play"></i>
@@ -1168,7 +1336,7 @@ const Home = () => {
                         </div>
                         
                         <div className="cta-box-btn wow fadeInUp" data-wow-delay="0.5s">
-                            <Link to="/" class="btn-default">contact us</Link>
+                            <Link to="/" className="btn-default">contact us</Link>
                         </div>
                     </div>
                 </div>
@@ -1202,7 +1370,7 @@ const Home = () => {
                     <div className="highlighted-article-post wow fadeInUp">
                         <div className="highlighted-article-featured-img">
                             <figure>
-                                <Link to="/" class="image-anime" data-cursor-text="View">
+                                <Link to="/" className="image-anime" data-cursor-text="View">
                                     <img src="assets/images/post-1.jpg" alt=""/>
                                 </Link>
                             </figure>
@@ -1212,13 +1380,13 @@ const Home = () => {
                         <div className="highlighted-article-body">
                             <div className="article-meta">
                                 <ul>
-                                    <li><Link to="/"><i class="fa-solid fa-calendar-days"></i> sep 19, 2024</Link></li>
+                                    <li><Link to="/"><i className="fa-solid fa-calendar-days"></i> sep 19, 2024</Link></li>
                                 </ul>
                             </div>
                             
                             <div className="highlighted-article-content">
                                 <h3><Link to="/">Road Trip Essentials: What to Pack for a Smooth Journey</Link></h3>
-                                <Link to="/" class="section-icon-btn">
+                                <Link to="/" className="section-icon-btn">
                                     <img src="assets/images/arrow-white.svg" alt=""/>
                                 </Link>
                             </div>
@@ -1244,7 +1412,7 @@ const Home = () => {
 
                             <div className="article-post-content">
                                 <h3><Link to="/">Exploring the City: Best Urban Destinations for a Weekend Getaway</Link></h3>
-                                <Link to="/" class="read-story-btn">read story</Link>
+                                <Link to="/" className="read-story-btn">read story</Link>
                             </div>
                         </div>
                     </div>
@@ -1253,7 +1421,7 @@ const Home = () => {
                     <div className="article-post wow fadeInUp" data-wow-delay="0.25s">
                         <div className="article-featured-img">
                             <figure>
-                                <Link to="/" class="image-anime" data-cursor-text="View">
+                                <Link to="/" className="image-anime" data-cursor-text="View">
                                     <img src="assets/images/post-3.jpg" alt=""/>
                                 </Link>
                             </figure>
@@ -1268,7 +1436,7 @@ const Home = () => {
 
                             <div className="article-post-content">
                                 <h3><Link to="/">Exploring the City: Best Urban Destinations for a Weekend Getaway</Link></h3>
-                                <Link to="/" class="read-story-btn">read story</Link>
+                                <Link to="/" className="read-story-btn">read story</Link>
                             </div>
                         </div>
                     </div>
@@ -1291,7 +1459,7 @@ const Home = () => {
 
                             <div className="article-post-content">
                                 <h3><Link to="/">Exploring the City: Best Urban Destinations for a Weekend Getaway</Link></h3>
-                                <Link to="/" class="read-story-btn">read story</Link>
+                                <Link to="/" className="read-story-btn">read story</Link>
                             </div>
                         </div>
                     </div>

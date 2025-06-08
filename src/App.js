@@ -13,6 +13,9 @@ import BlogSingle from "./pages/blog-single";
 import Drivers from "./pages/Drivers";
 import DriverSingle from "./pages/driver-single";
 import Pricing from "./pages/Pricing";
+import ImageGallery from "./pages/image-gallery";
+import Testimonials from "./pages/testimonials";
+import Faqs from "./pages/Faqs";
 
 function App() {
   return (
@@ -32,6 +35,12 @@ function App() {
         <Route path="/drivers" element={<Drivers />} />
         <Route path="/driver-single" element={<DriverSingle />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/image-gallery" element={<ImageGallery />} />
+        <Route path="/video-gallery" element={<ImageGallery />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/faqs" element={<Faqs />} />
+
+
       </Routes>
     </Router>
   );

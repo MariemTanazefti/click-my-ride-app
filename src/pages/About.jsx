@@ -104,7 +104,7 @@ const About = () => {
                       </Link>
                       <ul>
                         <li className="nav-item">
-                          <Link to="/Cars.jsx" className="nav-link" >
+                          <Link to="/cars" className="nav-link" >
                             Car Lists
                           </Link>
                         </li>

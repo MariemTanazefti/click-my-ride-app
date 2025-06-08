@@ -109,7 +109,7 @@ const Blog = () =>{
                     <div className="post-item wow fadeInUp">
                         <div class="post-featured-image" data-cursor-text="View">
                             <figure>
-                                <Link to="#" class="image-anime">
+                                <Link to="#" className="image-anime">
                                     <img src="assets/images/post-1.jpg" alt=""/>
                                 </Link>
                             </figure>
@@ -118,7 +118,7 @@ const Blog = () =>{
                         <div className="post-item-body">
                             <div className="post-meta">
                                 <ul>
-                                    <li><Link to="#"><i class="fa-solid fa-calendar-days"></i> july 26, 2024</Link></li>
+                                    <li><Link to="#"><i className="fa-solid fa-calendar-days"></i> july 26, 2024</Link></li>
                                 </ul>
                             </div>
                             
@@ -137,7 +137,7 @@ const Blog = () =>{
                     <div className="post-item wow fadeInUp" data-wow-delay="0.25s">
                         <div className="post-featured-image" data-cursor-text="View">
                             <figure>
-                                <Link to="#" class="image-anime">
+                                <Link to="#" className="image-anime">
                                     <img src="assets/images/post-2.jpg" alt=""/>
                                 </Link>
                             </figure>
@@ -165,7 +165,7 @@ const Blog = () =>{
                     <div className="post-item wow fadeInUp" data-wow-delay="0.5s">
                         <div className="post-featured-image" data-cursor-text="View">
                             <figure>
-                                <Link to="#" class="image-anime">
+                                <Link to="#" className="image-anime">
                                     <img src="assets/images/post-3.jpg" alt=""/>
                                 </Link>
                             </figure>
@@ -249,7 +249,7 @@ const Blog = () =>{
                     <div className="post-item wow fadeInUp" data-wow-delay="1.25s">
                         <div className="post-featured-image" data-cursor-text="View">
                             <figure>
-                                <Link to="#" class="image-anime">
+                                <Link to="#" className="image-anime">
                                     <img src="assets/images/post-6.jpg" alt=""/>
                                 </Link>
                             </figure>
@@ -277,7 +277,7 @@ const Blog = () =>{
                 <div className="col-lg-12">
                     <div className="post-pagination wow fadeInUp" data-wow-delay="0.5s">
                         <ul className="pagination">
-                            <li><Link to="#"><i class="fa-solid fa-arrow-left-long"></i></Link></li>
+                            <li><Link to="#"><i className="fa-solid fa-arrow-left-long"></i></Link></li>
                             <li className="active"><Link to="#">1</Link></li>
                             <li><Link to="#">2</Link></li>
                             <li><Link to="#">3</Link></li>

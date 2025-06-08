@@ -258,7 +258,7 @@ const CarSingle = () => {
                             <div className="fleets-single-sidebar-btn">
                                 <Link to="#bookingform" className="btn-default popup-with-form">book now</Link>
                                 <span>or</span>
-                                <Link to="#" class="wp-btn"><i class="fa-brands fa-whatsapp"></i></Link>                                
+                                <Link to="#" className="wp-btn"><i className="fa-brands fa-whatsapp"></i></Link>                                
                             </div>
                         </div>
 

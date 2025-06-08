@@ -106,7 +106,7 @@ const ServiceSingle = () =>{
             <div className="row">
                 <div className="col-lg-4">
                     <div className="service-sidebar">
-                        <div class="service-catagery-list wow fadeInUp">
+                        <div className="service-catagery-list wow fadeInUp">
                             <h3>our services</h3>
                             <ul>
                                 <li><Link to="#">Car Rental with Driver</Link></li>
@@ -169,7 +169,7 @@ const ServiceSingle = () =>{
                                     <div className="col-lg-3 col-6">
                                         <div className="service-gallery wow fadeInUp" data-wow-delay="0.4s" data-cursor-text="View">
                                             <Link to="assets/images/service-gallery-2.jpg">
-                                                <figure class="image-anime">
+                                                <figure className="image-anime">
                                                     <img src="assets/images/service-gallery-2.jpg" alt="img"/>
                                                 </figure>
                                             </Link>
