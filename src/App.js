@@ -38,7 +38,9 @@ function App() {
         <Route path="/image-gallery" element={<ImageGallery />} />
         <Route path="/video-gallery" element={<ImageGallery />} />
         <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/faqs" element={<Faqs />} />
+        <Route path="/faqs" element={<Faqs />} /> */
+
+        
 
 
       </Routes>

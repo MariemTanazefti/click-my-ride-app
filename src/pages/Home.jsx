@@ -211,7 +211,7 @@ const Home = () => {
                     <div className="about-image">
                         <div className="about-img-1">
                             <figure className="reveal">
-                                <img src="assets/images/about-img-1.jpg" alt=""/>
+                                <img src="/assets/images/about-img-1.jpg" alt=""/>
                             </figure>
                         </div>
 
@@ -1524,27 +1524,27 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="footer-copyright">
-                <div className="row align-items-center">
-                    <div className="col-lg-6 col-md-7">
-                        <div className="footer-copyright-text">
-                            <p>© 2024 Novaride. All rights reserved.</p>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-6 col-md-5">
-                        <div className="footer-social-links">
-                            <ul>
-                                <li><Link to="/"><i className="fa-brands fa-youtube"></i></Link></li>
-                                <li><Link to="/"><i className="fa-brands fa-facebook-f"></i></Link></li>
-                                <li><Link to="/"><i className="fa-brands fa-x-twitter"></i></Link></li>
-                                <li><Link to="/"><i className="fa-brands fa-instagram"></i></Link></li>
-                                <li><Link to="/"><i className="fa-brands fa-linkedin-in"></i></Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           <div className="footer-copyright">
+                                   <div className="row align-items-center">
+                                       <div className="col-lg-6 col-md-7">
+                                           <div className="footer-copyright-text">
+                                               <p>© 2024 Novaride. All rights reserved.</p>
+                                           </div>
+                                       </div>
+                   
+                                       <div className="col-lg-6 col-md-5">
+                                           <div className="footer-social-links">
+                                               <ul>
+                                                   <li><Link to="/"><i className="fa-brands fa-youtube"></i></Link></li>
+                                                   <li><Link to="/"><i className="fa-brands fa-facebook-f"></i></Link></li>
+                                                   <li><Link to="/"><i className="fa-brands fa-twitter"></i></Link></li>
+                                                   <li><Link to="/"><i className="fa-brands fa-instagram"></i></Link></li>
+                                                   <li><Link to="/"><i className="fa-brands fa-linkedin-in"></i></Link></li>
+                                               </ul>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
         </div>
     </footer>
 

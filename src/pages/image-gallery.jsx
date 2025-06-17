@@ -264,7 +264,7 @@ const ImageGallery = () => {
                                     <ul>
                                         <li><Link to="/"><i className="fa-brands fa-youtube"></i></Link></li>
                                         <li><Link to="/"><i className="fa-brands fa-facebook-f"></i></Link></li>
-                                        <li><Link to="/"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                        <li><Link to="/"><i className="fa-brands fa-twitter"></i></Link></li>
                                         <li><Link to="/"><i className="fa-brands fa-instagram"></i></Link></li>
                                         <li><Link to="/"><i className="fa-brands fa-linkedin-in"></i></Link></li>
                                     </ul>
