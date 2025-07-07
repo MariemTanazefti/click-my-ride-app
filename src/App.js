@@ -16,6 +16,9 @@ import Pricing from "./pages/Pricing";
 import ImageGallery from "./pages/image-gallery";
 import Testimonials from "./pages/testimonials";
 import Faqs from "./pages/Faqs";
+import Car2 from "./pages/car2";
+
+
 
 function App() {
   return (
@@ -26,7 +29,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/service" element={<Service />} />
         <Route path="/cars" element={<Cars />} />
-        <Route path="/car-single" element={<CarSingle />} />
+        <Route path="/car-single/:id" element={<CarSingle />} />
         <Route path="/car-type" element={<CarType />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/service-single" element={<ServiceSingle />} />
@@ -38,7 +41,11 @@ function App() {
         <Route path="/image-gallery" element={<ImageGallery />} />
         <Route path="/video-gallery" element={<ImageGallery />} />
         <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/faqs" element={<Faqs />} /> */
+        <Route path="/faqs" element={<Faqs />} /> 
+        <Route path="/car2" element={<Car2 />} />
+        
+
+
 
         
 
